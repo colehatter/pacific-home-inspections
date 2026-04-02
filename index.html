@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Home Inspections | Orange County, CA</title>
+  <meta name="description" content="Professional home inspections in Orange County, CA. Thorough, honest inspections with 24-hour report delivery. Licensed & Insured. Book today." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="Pacific Home Inspections" style="height:85px;" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="tel:+19493293622" class="header-phone">(949) 329-3622</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Beautiful Orange County Home" class="hero-house-img">
+      </div>
+      <div class="hero-right">
+        <h1>Orange County Home Inspections<br>You Can Trust</h1>
+        <p class="hero-sub">Thorough, honest inspections, with reports delivered within 24 hours.</p>
+        <a href="contact.html" class="button button-gold">Schedule Your Inspection</a>
+        <a href="tel:+19493293622" class="button button-outline-dark">📞 Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trust-bar alt">
+    <div class="trust-grid">
+      <div class="trust-item expandable" onclick="toggleTrust(this)">
+        <span class="trust-icon">🏗️</span>
+        <span class="trust-label">40+ Years Industry Experience</span>
+        <span class="trust-detail">Richard started on job sites building homes from the ground up, giving him expertise most inspectors simply can't match.</span>
+      </div>
+      <div class="trust-item expandable" onclick="toggleTrust(this)">
+        <span class="trust-icon">📋</span>
+        <span class="trust-label">Certified &amp; Insured</span>
+        <span class="trust-detail">ICA Certified, NHIE Certified, and fully insured, so you're protected every step of the way.</span>
+      </div>
+      <div class="trust-item expandable" onclick="toggleTrust(this)">
+        <span class="trust-icon">⏱️</span>
+        <span class="trust-label">24-Hour Report Delivery</span>
+        <span class="trust-detail">Your detailed inspection report, with photos and clear recommendations, delivered within 24 hours of your inspection.</span>
+      </div>
+      <div class="trust-item expandable" onclick="toggleTrust(this)">
+        <span class="trust-icon">🤝</span>
+        <span class="trust-label">Trusted by Buyers, Sellers &amp; Realtors</span>
+        <span class="trust-detail">From first-time buyers to seasoned real estate professionals, clients count on Richard for honest, thorough inspections every time.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAVE DIVIDER ===== -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,20 C360,40 1080,0 1440,20 L1440,40 L0,40 Z" fill="#F5F7F9"/>
+    </svg>
+  </div>
+
+  <!-- ===== ABOUT TEASER ===== -->
+  <section class="about-teaser">
+    <div class="container">
+      <h2>Built on Decades of Real Experience</h2>
+      <p>Richard Hatter didn't start his career as a home inspector, he started it building homes. With over 40 years in construction and real estate, he brings a level of expertise most inspectors simply can't match.</p>
+      <a href="about.html" class="link-arrow">Meet Richard →</a>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="alt">
+    <div class="container">
+      <h2 class="section-title">What We Inspect</h2>
+      <p class="section-subtitle">From pre-purchase to pre-listing, we've got you covered with thorough inspections backed by decades of hands-on construction knowledge.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">🏠</div>
+          <h3>Buyer's Inspection</h3>
+          <p>A thorough pre-purchase inspection to identify any issues before you close.</p>
+          <a href="services.html" class="link-arrow">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🏷️</div>
+          <h3>Seller's Inspection</h3>
+          <p>Know what buyers will find before they do, and address it on your terms.</p>
+          <a href="services.html" class="link-arrow">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🔍</div>
+          <h3>General Home Inspection</h3>
+          <p>A complete evaluation of your home's major systems and structure, ideal for peace of mind.</p>
+          <a href="services.html" class="link-arrow">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Getting a professional home inspection is simple and straightforward.</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Schedule</h3>
+          <p>Contact us to book your inspection at a time that works for you.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>We Inspect</h3>
+          <p>Richard conducts a thorough on-site inspection of the property.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Your Report</h3>
+          <p>Receive a detailed report within 24 hours, clear, honest, and actionable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p>Schedule your inspection today and make your next real estate decision with confidence.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule Your Inspection</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Pacific Home Inspections" />
+        <p class="footer-tagline">Inspecting with Integrity</p>
+        <p>Proudly Serving Orange County and Surrounding Areas</p>
+        <p class="footer-service-areas">Rancho Santa Margarita • Mission Viejo • Irvine<br>Laguna Niguel • Aliso Viejo • Laguna Beach • Surrounding Areas</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <a href="tel:+19493293622">(949) 329-3622</a>
+        <p>Orange County, CA</p>
+      </div>
+      <div class="footer-cta">
+        <h4>Get Inspected</h4>
+        <p>Ready to book? We'll confirm your appointment quickly.</p>
+        <a href="contact.html" class="btn btn-outline">Schedule an Inspection</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Pacific Home Inspections, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      nav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+
+    function toggleTrust(el) {
+      el.classList.toggle('expanded');
+    }
+  </script>
+
+  <style>
+    .hero-house-img {
+      width: 100%;
+      max-width: 520px;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      object-fit: cover;
+      max-height: 380px;
+    }
+
+    .trust-item.expandable {
+      cursor: pointer;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: box-shadow 0.22s ease, transform 0.22s ease;
+    }
+    .trust-item.expandable:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .trust-detail {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.88rem;
+      color: #ffffff;
+      line-height: 1.5;
+      max-width: 220px;
+    }
+    .trust-item.expanded .trust-detail {
+      display: block;
+    }
+    .trust-item.expandable::after {
+      content: '▾';
+      font-size: 0.8rem;
+      color: var(--primary-blue);
+      margin-top: 4px;
+      opacity: 0.6;
+    }
+    .trust-item.expanded::after {
+      content: '▴';
+    }
+
+    .button-outline-dark {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      color: var(--primary-dark);
+      background: #ffffff;
+      text-decoration: none;
+      transition: all 0.22s ease;
+      margin-left: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    }
+    .button-outline-dark:hover {
+      background: #f0f4f8;
+      color: var(--primary-dark);
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+    }
+
+    .trust-item .trust-icon {
+      font-size: 4.8rem;
+    }
+    .trust-item .trust-label {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+    .trust-item {
+      padding: 24px 16px;
+      min-height: 100px;
+    }
+  </style>
+
+</body>
+</html>

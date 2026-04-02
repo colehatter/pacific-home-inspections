@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule an Inspection | Pacific Home Inspections | Orange County, CA</title>
+  <meta name="description" content="Schedule a home inspection in Orange County, CA. Fill out our contact form and Richard will reach out to confirm your appointment. 24-hour report delivery." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="Pacific Home Inspections" style="height:85px;" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="tel:+19493293622" class="header-phone">(949) 329-3622</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <h1>Schedule Your Inspection</h1>
+    <p>Fill out the form below and Richard will reach out to confirm your appointment.</p>
+  </section>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section class="contact-section">
+    <div class="contact-form-wrap">
+      <h2>Request an Inspection</h2>
+      <form action="#" method="POST" novalidate>
+
+        <div class="form-group">
+          <label for="full-name">Full Name <span style="color:#c0392b;">*</span></label>
+          <input type="text" id="full-name" name="full_name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number <span style="color:#c0392b;">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="(949) 555-1234" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="property-address">Property Address</label>
+          <input type="text" id="property-address" name="property_address" placeholder="123 Main St, Irvine, CA 92620" />
+        </div>
+
+        <div class="form-group">
+          <label for="inspection-date">Preferred Inspection Date</label>
+          <input type="date" id="inspection-date" name="inspection_date" />
+        </div>
+
+        <div class="form-group">
+          <label for="service-type">Service Type</label>
+          <select id="service-type" name="service_type">
+            <option value="" disabled selected>Select a service…</option>
+            <option value="buyers">Buyer's Inspection</option>
+            <option value="sellers">Seller's Inspection (Pre-Listing)</option>
+            <option value="general">General Home Inspection</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any additional details about the property or your inspection needs…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Request Inspection</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <p>Prefer to call? Reach us at&nbsp;<a href="tel:+19493293622">(949) 329-3622</a></p>
+      <span class="service-area-note">Serving Orange County and Surrounding Areas</span>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Pacific Home Inspections" />
+        <p class="footer-tagline">Inspecting with Integrity</p>
+        <p>Proudly Serving Orange County and Surrounding Areas</p>
+        <p class="footer-service-areas">Rancho Santa Margarita • Mission Viejo • Irvine<br>Laguna Niguel • Aliso Viejo • Laguna Beach • Surrounding Areas</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <a href="tel:+19493293622">(949) 329-3622</a>
+        <p>Orange County, CA</p>
+      </div>
+      <div class="footer-cta">
+        <h4>Get Inspected</h4>
+        <p>Ready to book? We'll confirm your appointment quickly.</p>
+        <a href="contact.html" class="btn btn-outline">Schedule an Inspection</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Pacific Home Inspections, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      nav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+  </script>
+
+</body>
+</html>
