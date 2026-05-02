@@ -162,15 +162,29 @@ nav.main-nav a.active {
 
 /* Header Phone */
 .header-phone {
+  font-weight: 700 !important;
+  color: var(--sun-gold) !important;
+  font-size: 2.9rem !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  letter-spacing: 0.01em !important;
+  border-bottom: none !important;
+}
+.header-phone:hover {
+  text-decoration: underline !important;
+  color: var(--sun-gold) !important;
+}
+
+/* Pay Now nav link */
+.pay-now-link {
   font-weight: 600;
-  color: var(--sun-gold);
-  font-size: 1.1rem;
+  color: #5f7fff !important;
   text-decoration: none;
   white-space: nowrap;
 }
-.header-phone:hover {
+.pay-now-link:hover {
   text-decoration: underline;
-  color: var(--sun-gold);
+  color: #4a6aee !important;
 }
 
 /* Hamburger */

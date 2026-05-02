@@ -25,6 +25,7 @@
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
+        <a href="https://venmo.com/richard-hatter-2" class="pay-now-link" target="_blank" rel="noopener">Pay Now</a>
         <a href="tel:+19493293622" class="header-phone">(949) 329-3622</a>
       </nav>
     </div>
@@ -34,7 +35,7 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-left">
-        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Beautiful Orange County Home" class="hero-house-img">
+        <img src="assets/images/home-hero.png" alt="Pacific Home Inspections" class="hero-house-img">
       </div>
       <div class="hero-right">
         <h1>Orange County Home Inspections<br>You Can Trust</h1>
@@ -71,7 +72,7 @@
     </div>
   </section>
 
-  <!-- ===== WAVE DIVIDER ===== -->
+  <!-- ===== WAVE DIRIDER ===== -->
   <div class="wave-divider">
     <svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <path d="M0,20 C360,40 1080,0 1440,20 L1440,40 L0,40 Z" fill="#F5F7F9"/>
@@ -91,7 +92,7 @@
   <section class="alt">
     <div class="container">
       <h2 class="section-title">What We Inspect</h2>
-      <p class="section-subtitle">From pre-purchase to pre-listing, we've got you covered with thorough inspections backed by decades of hands-on construction knowledge.</p>
+      <p class="section-subtitle">From pre-purchase/pre-listing all the way through closing, we've got you covered with thorough inspections backed by decades of hands-on construction knowledge</p>
       <div class="services-grid">
         <div class="service-card">
           <div class="card-icon">🏠</div>
@@ -143,9 +144,18 @@
   <!-- ===== FINAL CTA ===== -->
   <section class="cta-section">
     <div class="container">
-      <h2>Ready to Get Started?</h2>
-      <p>Schedule your inspection today and make your next real estate decision with confidence.</p>
-      <a href="contact.html" class="btn btn-primary">Schedule Your Inspection</a>
+      <div class="cta-two-col">
+        <div class="cta-col">
+          <h2>Ready to Get Started?</h2>
+          <p>Schedule your inspection today and make your next real estate decision with confidence.</p>
+          <a href="contact.html" class="btn btn-primary">Schedule Your Inspection</a>
+        </div>
+        <div class="cta-col cta-col-pay">
+          <h2 class="cta-pay-heading">Scheduled and ready to pay?</h2>
+          <p class="cta-pay-sub">To secure your inspection appointment click the button below to pay now</p>
+          <a href="https://venmo.com/richard-hatter-2" class="btn btn-pay-now" target="_blank" rel="noopener">Pay Now</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -264,6 +274,76 @@
     .trust-item {
       padding: 24px 16px;
       min-height: 100px;
+    }
+
+    /* Two-column CTA */
+    .cta-two-col {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-col {
+      flex: 1;
+      min-width: 260px;
+    }
+    .cta-col-pay {
+      border-left: 2px solid rgba(255,255,255,0.25);
+      padding-left: 48px;
+    }
+    .cta-pay-heading {
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+    }
+    .cta-pay-sub {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 24px;
+    }
+    .btn-pay-now {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #5f7fff;
+      color: #fff;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.22s ease;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    }
+    .btn-pay-now:hover {
+      background: #4a6aee;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      text-decoration: none;
+    }
+
+    /* Pay Now nav link */
+    .pay-now-link {
+      font-weight: 600;
+      color: #5f7fff !important;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .pay-now-link:hover {
+      text-decoration: underline;
+      color: #4a6aee !important;
+    }
+
+    @media (max-width: 700px) {
+      .cta-two-col {
+        flex-direction: column;
+        gap: 32px;
+      }
+      .cta-col-pay {
+        border-left: none;
+        border-top: 2px solid rgba(255,255,255,0.25);
+        padding-left: 0;
+        padding-top: 32px;
+      }
     }
   </style>
 
